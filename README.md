@@ -2,6 +2,9 @@ Credit Risk Predictor
 Built by Jonas Karmush
 
 
+NOTE: You need to install VS code and python before any of this works.
+
+
 IMPORTANT NOTE BEFORE YOU START!
 This is my absolute first code and i've genuinely no idea how to make this simpler but this is the only way ive found to start the app, I'll look for a way to make it easier in the near future
 Step 1: Download the ZIP file and extract it somewhere on your computer
@@ -13,7 +16,7 @@ Now you're basically done! Open up credit_risk_full_program.py; press F5 and hit
 Now you're done; open up credit_risk_desktop_app_3_5.py, press F5, Run it and boom its gonna start! 
 You're finished!
 
-And if you're like me and really lazy i've also created a .Bat file that you'll find under ''run_full_application'' this .Bat file will work anytime after youve done these steps!
+And if you're like me and really lazy i've also created a .Bat file that you'll find under ''run_full_application'' this .Bat file will work anytime after youve done these steps! 
 
 
 ---
