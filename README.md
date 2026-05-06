@@ -1,17 +1,31 @@
-# Credit Risk Predictor
-**Built by Jonas Karmush**
+Credit Risk Predictor
+Built by Jonas Karmush
+
+
+IMPORTANT NOTE BEFORE YOU START!
+This is my absolute first code and i've genuinely no idea how to make this simpler but this is the only way ive found to start the app, I'll look for a way to make it easier in the near future
+Step 1: Download the ZIP file and extract it somewhere on your computer
+Step 2: Install required libraries: how you do this is start CMD on ur PC, type in this
+py -m pip install pandas scikit-learn matplotlib joblib
+
+Now you've got the libraries installed (You will never need to do this twice)
+Now you're basically done! Open up credit_risk_full_program.py; press F5 and hit RUN, you should see ''Automation Complete'' once you've completed the task, and as same as before, you never have to do this twice
+Now you're done; open up credit_risk_desktop_app_3_5.py, press F5, Run it and boom its gonna start! 
+You're finished!
+
+And if you're like me and really lazy i've also created a .Bat file that you'll find under ''run_full_application'' this .Bat file will work anytime after youve done these steps!
+
 
 ---
 
-## So what is this?
+So what is this?
 
 This is a desktop app that predicts whether someone is likely to be a good or bad credit risk. You plug in some info about a borrower — things like their age, loan amount, credit history, savings — and a machine learning model spits out a probability of default along with a recommendation on whether to approve or reject the loan.
 
 It's built to simulate the kind of tool that banks and lenders actually use. Turns out logistic regression is still the go-to algorithm in real credit scoring because regulators require banks to be able to explain their decisions, and logistic regression is about as explainable as it gets.
 
 ---
-
-## How to run it
+ How to run it
 
 You'll need Python and a few libraries. If you don't have them yet:
 
@@ -33,9 +47,9 @@ py credit_risk_desktop_app_3.py
 
 ---
 
-## What do all the fields mean?
+ What do all the fields mean?
 
-### Left side — the numbers
+ Left side — the numbers
 
 | Field | What it is |
 |---|---|
@@ -48,7 +62,7 @@ py credit_risk_desktop_app_3.py
 | Existing active loans/credits | How many loans or credit lines they already have open. |
 | Number of dependents | How many people rely on them financially. |
 
-### Right side — the dropdowns
+ Right side — the dropdowns
 
 | Field | What it is |
 |---|---|
@@ -63,9 +77,9 @@ py credit_risk_desktop_app_3.py
 
 ---
 
-## Reading the results
+ Reading the results
 
-### Risk levels
+ Risk levels
 
 | Level | Probability | What it means |
 |---|---|---|
@@ -74,7 +88,7 @@ py credit_risk_desktop_app_3.py
 | HIGH RISK | 50–75% | Real default risk here |
 | VERY HIGH RISK | 75–100% | Very likely to default |
 
-### Recommendations
+Recommendations
 
 | Recommendation | When it shows up |
 |---|---|
@@ -83,17 +97,17 @@ py credit_risk_desktop_app_3.py
 | REVIEW CAREFULLY | 50–75% bad risk |
 | DECLINE | Above 75% bad risk |
 
-### The tabs
+ The tabs
 
-**Risk Summary** — shows up automatically after each prediction. Instead of just showing the result, it breaks down the specific risk factors for that borrower — things like long loan duration, weak savings, or a bad checking account status.
+Risk Summary** — shows up automatically after each prediction. Instead of just showing the result, it breaks down the specific risk factors for that borrower — things like long loan duration, weak savings, or a bad checking account status.
 
-**Borrower History** — keeps a running log of every prediction you make during the session so you can compare borrowers side by side. There's a clear button if you want to start fresh.
+Borrower History** — keeps a running log of every prediction you make during the session so you can compare borrowers side by side. There's a clear button if you want to start fresh.
 
-**Save Prediction** — saves everything to a `predictions_log.csv` file in your project folder. Date, time, borrower details, probabilities, decision, the works.
+Save Prediction** — saves everything to a `predictions_log.csv` file in your project folder. Date, time, borrower details, probabilities, decision, the works.
 
 ---
 
-## The model
+ The model
 
 I used **Logistic Regression** trained on the **German Credit Dataset** from OpenML — 1,000 real credit cases. The target variable is simple: good credit risk or bad credit risk.
 
