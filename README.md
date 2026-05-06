@@ -45,7 +45,7 @@ py credit_risk_full_program.py
 After that, launch the actual app:
 
 ```
-py credit_risk_desktop_app_3.py
+py credit_risk_desktop_app_3_5.py
 ```
 
 ---
